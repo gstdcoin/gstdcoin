@@ -32,7 +32,7 @@ Ask an AI, link a TON wallet, and run a node on your own hardware. GSTD is an ea
 
 ## Current release and payments
 
-The compute node is version 3.6.0. Its default is local inference; sending a request to another node is an explicit choice. Operators earn **85%** of accepted paid work; **10%** goes to the protocol and **5%** to the reserve. There are no presence rewards or guaranteed hourly income.
+The compute node is on the 3.6 release line. Its default is local inference; sending a request to another node is an explicit choice. Operators earn **85%** of accepted paid work; **10%** goes to the protocol and **5%** to the reserve. There are no presence rewards or guaranteed hourly income.
 
 Use [Payments](https://app.gstdtoken.com/payments) for backed balances, rewards and withdrawal requests. Blockchain payouts currently require the custody owner signature; the platform charges no additional GSTD withdrawal fee. Free and promotional requests do not create withdrawable GSTD.
 
