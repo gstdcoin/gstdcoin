@@ -1,6 +1,6 @@
 # GSTD — decentralized AI compute on TON
 
-Ask an AI, link a TON wallet, and run a node on your own hardware. GSTD is an early-stage, source-available project; everything runs on Cloudflare's free tier.
+Ask an AI, link a TON wallet, and run a node on your own hardware. GSTD is an early-stage, source-available project; the website and platform use Cloudflare, while compute runs on operators' hardware.
 
 [![Website](https://img.shields.io/badge/site-gstdtoken.com-00d2ff?style=flat-square)](https://gstdtoken.com)
 [![App](https://img.shields.io/badge/app-app.gstdtoken.com-0ea5e9?style=flat-square)](https://app.gstdtoken.com)
@@ -29,3 +29,11 @@ Ask an AI, link a TON wallet, and run a node on your own hardware. GSTD is an ea
 - **Honest numbers.** No invented nodes, tasks or earnings. When the network is empty, the site and the bot say so.
 - **No promises of income.** Rewards depend on real demand and are not guaranteed; nothing here is investment advice.
 - **Source-available.** Code is under the PolyForm Noncommercial License with a permission for taking part in the network.
+
+## Current release and payments
+
+The compute node is version 3.6.0. Its default is local inference; sending a request to another node is an explicit choice. Operators earn **85%** of accepted paid work; **10%** goes to the protocol and **5%** to the reserve. There are no presence rewards or guaranteed hourly income.
+
+Use [Payments](https://app.gstdtoken.com/payments) for backed balances, rewards and withdrawal requests. Blockchain payouts currently require the custody owner signature; the platform charges no additional GSTD withdrawal fee. Free and promotional requests do not create withdrawable GSTD.
+
+[Release readiness and remaining gates](https://github.com/gstdcoin/ai/blob/main/docs/READINESS.md) distinguish tested code from end-to-end mainnet validation. The deployment currently has one physical compute node; multi-operator resilience is not established. Bridge and fine-tuning research are outside the production compute profile.
