@@ -1,17 +1,19 @@
 # GSTD — decentralized AI compute on TON
 
-Ask an AI, link a TON wallet, and run a node on your own hardware. GSTD is an early-stage, source-available project; the website and platform use Cloudflare, while compute runs on operators' hardware.
+Use AI in the main app, manage a TON-linked balance there, or run a compute node on your own hardware. GSTD is an early-stage, source-available project; the website and platform use Cloudflare, while compute runs on operators' hardware.
 
 [![Website](https://img.shields.io/badge/site-gstdtoken.com-00d2ff?style=flat-square)](https://gstdtoken.com)
 [![App](https://img.shields.io/badge/app-app.gstdtoken.com-0ea5e9?style=flat-square)](https://app.gstdtoken.com)
 [![Telegram bot](https://img.shields.io/badge/Telegram-@gstdaibot-26a5e4?style=flat-square)](https://t.me/gstdaibot)
 [![Channel](https://img.shields.io/badge/channel-@gstdtoken-26a5e4?style=flat-square)](https://t.me/gstdtoken)
 
+The [public website](https://gstdtoken.com) explains the project, installation and documentation. The [app](https://app.gstdtoken.com/chat) is the workspace for model selection, chat, balance and rewards; the website demo is an optional introduction.
+
 ## Try it
 
-- **Chat with the AI** — [@gstdaibot](https://t.me/gstdaibot) in Telegram, or [app.gstdtoken.com](https://app.gstdtoken.com).
+- **Chat with the AI** — [@gstdaibot](https://t.me/gstdaibot) in Telegram, or the [main app chat](https://app.gstdtoken.com/chat).
 - **Run a node** — `curl -fsSL https://raw.githubusercontent.com/gstdcoin/gstdbot/main/install.sh | bash`
-- **Check the network** — [live stats](https://app.gstdtoken.com/api/v1/network/stats). They are the source of truth for nodes, tasks and payouts.
+- **Check the network** — [live stats](https://app.gstdtoken.com/api/v1/network/stats). They report current node and workload counters; counters do not prove an on-chain payout.
 
 ## Repositories
 
@@ -32,7 +34,7 @@ Ask an AI, link a TON wallet, and run a node on your own hardware. GSTD is an ea
 
 ## Current release and payments
 
-The compute node is on the 3.6 release line. Its default is local inference; sending a request to another node is an explicit choice. Operators earn **85%** of accepted paid work; **10%** goes to the protocol and **5%** to the reserve. There are no presence rewards or guaranteed hourly income.
+The compute node is on the 3.7 release line. Its default is local inference; sending a request to another node is an explicit choice. Operators earn **85%** of accepted paid work; **10%** goes to the protocol and **5%** to the reserve. There are no presence rewards or guaranteed hourly income.
 
 Use [Payments](https://app.gstdtoken.com/payments) for backed balances, rewards and withdrawal requests. Blockchain payouts currently require the custody owner signature; the platform charges no additional GSTD withdrawal fee. Free and promotional requests do not create withdrawable GSTD.
 
