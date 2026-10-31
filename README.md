@@ -50,3 +50,5 @@ Use [Payments](https://app.gstdtoken.com/payments) for backed balances, rewards 
 Companies and individuals can build commercial integrations under the relevant permission without individual approval. The GSTD condition does not charge for installation, local execution, free requests or model downloads; TON gas and unrelated business fees remain separate. Bundling paid network compute does not exempt its underlying GSTD settlement.
 
 Third-party code, dependencies, models and assets retain their own licenses. Earlier releases retain their earlier licenses. These terms cannot force independent implementations to use GSTD, do not promise earnings, and do not make any undeployed financial feature operational. This overview does not replace or relicense the linked repositories.
+
+The first-party overview text in this index repository is available under [Apache-2.0](LICENSE), with [notices](NOTICE). This does not grant rights to linked code or third-party materials.
