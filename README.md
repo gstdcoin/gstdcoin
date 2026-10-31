@@ -23,14 +23,14 @@ The [public website](https://gstdtoken.com) explains the project, installation a
 | [ai](https://github.com/gstdcoin/ai) | Platform app, node/task API, network stats and the Telegram bot |
 | [gstdbot](https://github.com/gstdcoin/gstdbot) | Node software: install, heartbeats, inference tasks, sovereign core |
 | [A2A](https://github.com/gstdcoin/A2A) | Experimental clients and a local MCP server for AI agents |
-| [contracts](https://github.com/gstdcoin/contracts) | TON smart contracts in Tact (partially deployed, unaudited) |
+| [contracts](https://github.com/gstdcoin/contracts) | TON smart contracts in Tact (partially deployed; release gates apply) |
 | [gstd-bridge](https://github.com/gstdcoin/gstd-bridge) | Bridge research scaffold (deferred, not deployed) |
 
 ## Principles
 
 - **Honest numbers.** No invented nodes, tasks or earnings. When the network is empty, the site and the bot say so.
 - **No promises of income.** Rewards depend on real demand and are not guaranteed; nothing here is investment advice.
-- **Source-available.** Code is under the PolyForm Noncommercial License with a permission for taking part in the network.
+- **Clear usage rights.** Core repositories are source-available under PolyForm Noncommercial with a commercial GSTD network permission. The A2A client SDK is separately licensed under Apache-2.0.
 
 ## Current release and payments
 
@@ -39,3 +39,14 @@ The compute node is on the 3.7 release line. Its default is local inference; sen
 Use [Payments](https://app.gstdtoken.com/payments) for backed balances, rewards and withdrawal requests. Blockchain payouts currently require the custody owner signature; the platform charges no additional GSTD withdrawal fee. Free and promotional requests do not create withdrawable GSTD.
 
 [Release readiness and remaining gates](https://github.com/gstdcoin/ai/blob/main/docs/READINESS.md) distinguish tested code from end-to-end mainnet validation. The deployment currently has one physical compute node; multi-operator resilience is not established. Bridge and fine-tuning research are outside the production compute profile.
+
+## Licensing across the ecosystem
+
+| Component | Current first-party code terms |
+| --- | --- |
+| [Node](https://github.com/gstdcoin/gstdbot/blob/main/LICENSE), [platform](https://github.com/gstdcoin/ai/blob/main/LICENSE), [website](https://github.com/gstdcoin/web/blob/main/LICENSE), [contracts](https://github.com/gstdcoin/contracts/blob/master/LICENSE), [deferred bridge](https://github.com/gstdcoin/gstd-bridge/blob/main/LICENSE) | PolyForm Noncommercial plus a common commercial network/app permission. Covered paid network compute settles in canonical GSTD. |
+| [A2A SDK](https://github.com/gstdcoin/A2A/blob/master/LICENSE) | Apache-2.0 for first-party client code; no mandatory token condition imposed by the SDK license. |
+
+Companies and individuals can build commercial integrations under the relevant permission without individual approval. The GSTD condition does not charge for installation, local execution, free requests or model downloads; TON gas and unrelated business fees remain separate. Bundling paid network compute does not exempt its underlying GSTD settlement.
+
+Third-party code, dependencies, models and assets retain their own licenses. Earlier releases retain their earlier licenses. These terms cannot force independent implementations to use GSTD, do not promise earnings, and do not make any undeployed financial feature operational. This overview does not replace or relicense the linked repositories.
