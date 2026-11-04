@@ -9,6 +9,8 @@ Use AI in the main app, manage a TON-linked balance there, or run a compute node
 
 The [public website](https://gstdtoken.com) explains the project, installation and documentation. The [app](https://app.gstdtoken.com/chat) is the workspace for model selection, chat, balance and rewards; the website demo is an optional introduction.
 
+[Start here / Начните здесь](https://gstdtoken.com/docs#get-started) · [Detailed bilingual guide](https://github.com/gstdcoin/ai/blob/main/docs/START_HERE.md)
+
 ## Try it
 
 - **Chat with the AI** — [@gstdaibot](https://t.me/gstdaibot) in Telegram, or the [main app chat](https://app.gstdtoken.com/chat).
@@ -36,7 +38,7 @@ The [public website](https://gstdtoken.com) explains the project, installation a
 
 The compute node is on the 3.7 release line. Its default is local inference; sending a request to another node is an explicit choice. Operators earn **85%** of accepted paid work; **10%** goes to the protocol and **5%** to the reserve. There are no presence rewards or guaranteed hourly income.
 
-Use [Payments](https://app.gstdtoken.com/payments) for backed balances, rewards and withdrawal requests. Blockchain payouts currently require the custody owner signature; the platform charges no additional GSTD withdrawal fee. Free and promotional requests do not create withdrawable GSTD.
+Use [Payments](https://app.gstdtoken.com/payments) for backed balances, rewards and withdrawal requests. Platform-ledger payouts require the custody owner signature. The separate [mainnet escrow open beta](https://app.gstdtoken.com/escrow-mainnet) uses per-job contracts and beneficiary-signed claims; contract funds do not migrate to the platform balance. A real mainnet payout is still unverified. There is no additional GSTD claim/withdrawal fee; signers pay TON network fees. Free and promotional requests do not create withdrawable GSTD.
 
 [Release readiness and remaining gates](https://github.com/gstdcoin/ai/blob/main/docs/READINESS.md) distinguish tested code from end-to-end mainnet validation. The deployment currently has one physical compute node; multi-operator resilience is not established. Bridge and fine-tuning research are outside the production compute profile.
 
