@@ -1,5 +1,9 @@
 # GSTD — decentralized AI compute on TON
 
+[Project map / Карта проекта](https://github.com/gstdcoin/ai/blob/main/docs/INDEX.md) · [Release evidence](https://github.com/gstdcoin/ai/blob/main/docs/READINESS.md) · [Repository maintenance](https://github.com/gstdcoin/ai/blob/main/docs/REPOSITORY_MAINTENANCE.md)
+
+Default branch: `main`.
+
 Use AI in the main app, manage a TON-linked balance there, or run a compute node on your own hardware. GSTD is an early-stage, source-available project; the website and platform use Cloudflare, while compute runs on operators' hardware.
 
 [![Website](https://img.shields.io/badge/site-gstdtoken.com-00d2ff?style=flat-square)](https://gstdtoken.com)
@@ -14,7 +18,7 @@ The [public website](https://gstdtoken.com) explains the project, installation a
 ## Try it
 
 - **Chat with the AI** — [@gstdaibot](https://t.me/gstdaibot) in Telegram, or the [main app chat](https://app.gstdtoken.com/chat).
-- **Run a node / Запустить ноду** — start with the [operator guide](https://github.com/gstdcoin/gstdbot/blob/main/docs/OPERATOR_PANEL.md) and [verified installer and release status](https://github.com/gstdcoin/gstdbot/pull/8).
+- **Run a node / Запустить ноду** — start with the [operator guide](https://github.com/gstdcoin/gstdbot/blob/main/docs/OPERATOR_PANEL.md) and [signed release status](https://github.com/gstdcoin/ai/blob/main/docs/SIGNED_NODE_RELEASES.md).
 - **Check the network** — [live stats](https://app.gstdtoken.com/api/v1/network/stats). They report current node and workload counters; counters do not prove an on-chain payout.
 
 ## Repositories
@@ -41,23 +45,19 @@ The compute node is on the 3.7 release line. Its default is local inference; sen
 
 Use [Payments](https://app.gstdtoken.com/payments) for backed balances, rewards and withdrawal requests. Platform-ledger payouts require the custody owner signature. The separate [mainnet escrow open beta](https://app.gstdtoken.com/escrow-mainnet) uses per-job contracts and beneficiary-signed claims; contract funds do not migrate to the platform balance. A real mainnet payout is still unverified. There is no additional GSTD claim/withdrawal fee; signers pay TON network fees. Free and promotional requests do not create withdrawable GSTD.
 
-[Release readiness and remaining gates](https://github.com/gstdcoin/ai/blob/main/docs/READINESS.md) distinguish tested code from end-to-end mainnet validation. The deployment currently has one physical compute node; multi-operator resilience is not established. Bridge and fine-tuning research are outside the production compute profile.
+[Release readiness and remaining gates](https://github.com/gstdcoin/ai/blob/main/docs/READINESS.md) distinguish tested code from end-to-end mainnet validation. The live registry reports current node counts; independent multi-operator resilience is not established. Bridge and fine-tuning research are outside the production compute profile.
 
-## Release status checked on 2026-11-17
+## Release evidence checked on 2026-11-18
 
-Production reported escrow manifest v1 with its RPC configured. A live mainnet funding, acceptance and payout cycle still awaits verification. The node release endpoint served signed version 3.7.2 at commit `ccf459c`.
-
-| Scope | Published candidate |
+| Component | Published state and evidence |
 | --- | --- |
-| Escrow v2 contracts | [contracts PR #6](https://github.com/gstdcoin/contracts/pull/6) |
-| Mainnet safety and Telegram updates | [Platform remediation branch](https://github.com/gstdcoin/ai/tree/codex/mainnet-remediation) |
-| Verified host catalog | [Platform host offers branch](https://github.com/gstdcoin/ai/tree/codex/verified-host-offers) |
-| Signed node installation and updates | [Node PR #8](https://github.com/gstdcoin/gstdbot/pull/8) |
-| Paired managed-inference benchmark | [Node PR #9](https://github.com/gstdcoin/gstdbot/pull/9) |
-| Host checks, task history and maintenance | [Node PR #10](https://github.com/gstdcoin/gstdbot/pull/10) |
-| Same-origin network statistics and installer verification | [Website PR #10](https://github.com/gstdcoin/web/pull/10) |
+| Platform | [Private preview and RPC deployment](https://github.com/gstdcoin/ai/actions/runs/44257765512/attempts/2) passed. Live health reported Redis and the catalog reported `rpc_configured:true`. |
+| Compute node source | [Node PR 11](https://github.com/gstdcoin/gstdbot/pull/11) merged; [main CI](https://github.com/gstdcoin/gstdbot/actions/runs/44256785028), installer and container smoke checks passed. |
+| Signed node manifest | Version 3.7.2, approved commit `ccf459c`; its public Ed25519 signature was verified. This is separate from newer main-branch source and an installed daemon. |
+| Escrow v2 | [Contracts PR 7](https://github.com/gstdcoin/contracts/pull/7) merged; [75-test CI](https://github.com/gstdcoin/contracts/actions/runs/44252837614) and [public Testnet receipts](https://github.com/gstdcoin/contracts/blob/master/docs/ESCROW_V2_TESTNET.md) are available. Mainnet activation is separate. |
+| Website | [Website PR 11](https://github.com/gstdcoin/web/pull/11) merged; [Cloudflare deployment](https://github.com/gstdcoin/web/actions/runs/44244093547) passed. |
 
-The linked branches and pull requests show change proposals. Production verification uses the deployed endpoints and the signed manifest. See [release evidence and remaining gates](https://github.com/gstdcoin/ai/blob/main/docs/READINESS.md).
+Open proposals are tracked in one [repository maintenance and review queue](https://github.com/gstdcoin/ai/blob/main/docs/REPOSITORY_MAINTENANCE.md). A proposal, source merge, signed release and production deployment are different states. [Readiness](https://github.com/gstdcoin/ai/blob/main/docs/READINESS.md) records the remaining mainnet, operator and recovery checks.
 
 ## Licensing across the ecosystem
 
