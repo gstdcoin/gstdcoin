@@ -1,6 +1,6 @@
 # GSTD — decentralized AI compute on TON
 
-> Domain migration proposal: website `gstdtoken.xyz`, platform `app.gstdtoken.xyz`. DNS/HTTPS and Telegram cutover must be verified before announcing the new host as live. See [migration status](https://github.com/gstdcoin/ai/blob/main/docs/DOMAIN_MIGRATION.md).
+> Canonical addresses: website `gstdtoken.xyz`, platform `app.gstdtoken.xyz`. DNS/HTTPS and Telegram cutover must be verified before announcing the new host as live. See [migration status](https://github.com/gstdcoin/ai/blob/main/docs/DOMAIN_MIGRATION.md).
 
 [Project map / Карта проекта](https://github.com/gstdcoin/ai/blob/main/docs/INDEX.md) · [Release evidence](https://github.com/gstdcoin/ai/blob/main/docs/READINESS.md) · [Repository maintenance](https://github.com/gstdcoin/ai/blob/main/docs/REPOSITORY_MAINTENANCE.md)
 
