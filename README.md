@@ -1,25 +1,27 @@
 # GSTD — decentralized AI compute on TON
 
+> Domain migration proposal: website `gstdtoken.xyz`, platform `app.gstdtoken.xyz`. DNS/HTTPS and Telegram cutover must be verified before announcing the new host as live. See [migration status](https://github.com/gstdcoin/ai/blob/main/docs/DOMAIN_MIGRATION.md).
+
 [Project map / Карта проекта](https://github.com/gstdcoin/ai/blob/main/docs/INDEX.md) · [Release evidence](https://github.com/gstdcoin/ai/blob/main/docs/READINESS.md) · [Repository maintenance](https://github.com/gstdcoin/ai/blob/main/docs/REPOSITORY_MAINTENANCE.md)
 
 Default branch: `main`.
 
 Use AI in the main app, manage a TON-linked balance there, or run a compute node on your own hardware. GSTD is an early-stage, source-available project; the website and platform use Cloudflare, while compute runs on operators' hardware.
 
-[![Website](https://img.shields.io/badge/site-gstdtoken.com-00d2ff?style=flat-square)](https://gstdtoken.com)
-[![App](https://img.shields.io/badge/app-app.gstdtoken.com-0ea5e9?style=flat-square)](https://app.gstdtoken.com)
+[![Website](https://img.shields.io/badge/site-gstdtoken.xyz-00d2ff?style=flat-square)](https://gstdtoken.xyz)
+[![App](https://img.shields.io/badge/app-app.gstdtoken.xyz-0ea5e9?style=flat-square)](https://app.gstdtoken.xyz)
 [![Telegram bot](https://img.shields.io/badge/Telegram-@gstdaibot-26a5e4?style=flat-square)](https://t.me/gstdaibot)
 [![Channel](https://img.shields.io/badge/channel-@gstdtoken-26a5e4?style=flat-square)](https://t.me/gstdtoken)
 
-The [public website](https://gstdtoken.com) explains the project, installation and documentation. The [app](https://app.gstdtoken.com/chat) is the workspace for model selection, chat, balance and rewards; the website demo is an optional introduction.
+The [public website](https://gstdtoken.xyz) explains the project, installation and documentation. The [app](https://app.gstdtoken.xyz/chat) is the workspace for model selection, chat, balance and rewards; the website demo is an optional introduction.
 
-[Start here / Начните здесь](https://gstdtoken.com/docs#get-started) · [Detailed bilingual guide](https://github.com/gstdcoin/ai/blob/main/docs/START_HERE.md)
+[Start here / Начните здесь](https://gstdtoken.xyz/docs#get-started) · [Detailed bilingual guide](https://github.com/gstdcoin/ai/blob/main/docs/START_HERE.md)
 
 ## Try it
 
-- **Chat with the AI** — [@gstdaibot](https://t.me/gstdaibot) in Telegram, or the [main app chat](https://app.gstdtoken.com/chat).
+- **Chat with the AI** — [@gstdaibot](https://t.me/gstdaibot) in Telegram, or the [main app chat](https://app.gstdtoken.xyz/chat).
 - **Run a node / Запустить ноду** — start with the [operator guide](https://github.com/gstdcoin/gstdbot/blob/main/docs/OPERATOR_PANEL.md) and [signed release status](https://github.com/gstdcoin/ai/blob/main/docs/SIGNED_NODE_RELEASES.md).
-- **Check the network** — [live stats](https://app.gstdtoken.com/api/v1/network/stats). They report current node and workload counters; counters do not prove an on-chain payout.
+- **Check the network** — [live stats](https://app.gstdtoken.xyz/api/v1/network/stats). They report current node and workload counters; counters do not prove an on-chain payout.
 
 ## Repositories
 
@@ -43,7 +45,7 @@ The [public website](https://gstdtoken.com) explains the project, installation a
 
 The compute node is on the 3.7 release line. Its default is local inference; sending a request to another node is an explicit choice. Operators earn **85%** of accepted paid work; **10%** goes to the protocol and **5%** to the reserve. There are no presence rewards or guaranteed hourly income.
 
-Use [Payments](https://app.gstdtoken.com/payments) for backed balances, rewards and withdrawal requests. Platform-ledger payouts require the custody owner signature. The separate [mainnet escrow open beta](https://app.gstdtoken.com/escrow-mainnet) uses per-job contracts and beneficiary-signed claims; contract funds do not migrate to the platform balance. A real mainnet payout is still unverified. There is no additional GSTD claim/withdrawal fee; signers pay TON network fees. Free and promotional requests do not create withdrawable GSTD.
+Use [Payments](https://app.gstdtoken.xyz/payments) for backed balances, rewards and withdrawal requests. Platform-ledger payouts require the custody owner signature. The separate [mainnet escrow open beta](https://app.gstdtoken.xyz/escrow-mainnet) uses per-job contracts and beneficiary-signed claims; contract funds do not migrate to the platform balance. A real mainnet payout is still unverified. There is no additional GSTD claim/withdrawal fee; signers pay TON network fees. Free and promotional requests do not create withdrawable GSTD.
 
 [Release readiness and remaining gates](https://github.com/gstdcoin/ai/blob/main/docs/READINESS.md) distinguish tested code from end-to-end mainnet validation. The live registry reports current node counts; independent multi-operator resilience is not established. Bridge and fine-tuning research are outside the production compute profile.
 
