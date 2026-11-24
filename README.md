@@ -1,6 +1,6 @@
 # GSTD — decentralized AI compute on TON
 
-> Canonical addresses: website `gstdtoken.xyz`, platform `app.gstdtoken.xyz`. DNS/HTTPS and Telegram cutover must be verified before announcing the new host as live. See [migration status](https://github.com/gstdcoin/ai/blob/main/docs/DOMAIN_MIGRATION.md).
+> Live website: [gstdtoken.xyz](https://gstdtoken.xyz) · App: [app.gstdtoken.xyz](https://app.gstdtoken.xyz) · [Compute Passport](https://gstdtoken.xyz/network). The passport publishes current registry facts and verifies approved node software signatures. [Current operating status](https://github.com/gstdcoin/ai/blob/main/docs/DOMAIN_MIGRATION.md).
 
 [Project map / Карта проекта](https://github.com/gstdcoin/ai/blob/main/docs/INDEX.md) · [Release evidence](https://github.com/gstdcoin/ai/blob/main/docs/READINESS.md) · [Repository maintenance](https://github.com/gstdcoin/ai/blob/main/docs/REPOSITORY_MAINTENANCE.md)
 
@@ -73,3 +73,9 @@ Companies and individuals can build commercial integrations under the relevant p
 Third-party code, dependencies, models and assets retain their own licenses. Earlier releases retain their earlier licenses. These terms cannot force independent implementations to use GSTD, do not promise earnings, and do not make any undeployed financial feature operational. This overview does not replace or relicense the linked repositories.
 
 The first-party overview text in this index repository is available under [Apache-2.0](LICENSE), with [notices](NOTICE). This does not grant rights to linked code or third-party materials.
+
+## Inspect before using compute
+
+Open the [GSTD Compute Passport](https://gstdtoken.xyz/network) to see live node/model declarations, platform availability and the cryptographically verified approved node release. Hardware claims are clearly labelled; unknown per-model cost/TTFT/success-rate measurements are not fabricated. See [evidence boundaries](https://github.com/gstdcoin/web/blob/main/docs/COMPUTE_PASSPORT.md).
+
+The app and CPU node are live. Telegram delivery is currently degraded pending a prepared canonical-webhook action: GitHub refused its runner because of an account billing lock. Use the main app while this external automation issue is resolved. This is separate from Cloudflare uptime and does not imply a completed paid task or mainnet payout.
